@@ -73,6 +73,11 @@ public enum ColorSampler {
     public struct Palette: Equatable, Sendable {
         public var background: RGBA
         public var foreground: RGBA
+
+        public init(background: RGBA, foreground: RGBA) {
+            self.background = background
+            self.foreground = foreground
+        }
     }
 
     public static func palette(in buffer: PixelBuffer, rect: CGRect) -> Palette {

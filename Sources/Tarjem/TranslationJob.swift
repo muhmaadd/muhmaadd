@@ -42,17 +42,17 @@ final class TranslationJob: ObservableObject {
 
     private var started = false
 
-    init(capture: CapturedImage, settings: AppSettings = .shared) {
+    init(capture: CapturedImage) {
         self.capture = capture
         self.text = nil
-        self.settings = settings
+        self.settings = .shared
         self.phase = .recognizing
     }
 
-    init(text: String, settings: AppSettings = .shared) {
+    init(text: String) {
         self.capture = nil
         self.text = text
-        self.settings = settings
+        self.settings = .shared
         self.phase = .translating
     }
 
