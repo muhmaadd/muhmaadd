@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(CoreGraphics)
+import CoreGraphics
+#endif
 
 /// One line of text found by OCR.
 public struct OCRLine: Equatable, Sendable {

@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(CoreGraphics)
+import CoreGraphics
+#endif
 
 public struct RGBA: Equatable, Hashable, Sendable {
     public var r: UInt8

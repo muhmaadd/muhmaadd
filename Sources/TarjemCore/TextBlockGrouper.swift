@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(CoreGraphics)
+import CoreGraphics
+#endif
 
 /// A paragraph-like group of OCR lines that should be translated together.
 public struct TextBlock: Equatable, Sendable, Identifiable {

@@ -1,5 +1,8 @@
 import XCTest
 @testable import TarjemCore
+#if canImport(CoreGraphics)
+import CoreGraphics
+#endif
 
 final class TextBlockGrouperTests: XCTestCase {
     private func line(_ text: String, x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat = 20) -> OCRLine {

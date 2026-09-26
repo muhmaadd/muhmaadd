@@ -1,5 +1,8 @@
 import XCTest
 @testable import TarjemCore
+#if canImport(CoreGraphics)
+import CoreGraphics
+#endif
 
 final class ColorSamplerTests: XCTestCase {
     /// Builds a `width`×`height` bitmap filled with `background`, with the pixels
